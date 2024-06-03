@@ -1,0 +1,6 @@
+@TaakAPI_HostAddress = http://localhost:5038
+
+GET {{TaakAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

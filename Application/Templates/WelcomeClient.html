@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido Cliente!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        .poppins-light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body {
+            padding: 2rem 4rem;
+        }
+
+        hr {
+            border-top: 1px solid #0E3E57;
+            margin: 24px 0;
+        }
+
+        section {
+            background: #FFFFFF;
+            margin: 12px auto;
+            width: clamp(600px, 90vw, 800px);
+            padding: 12px;
+        }
+
+            section header {
+                text-align: center;
+            }
+
+                section header img {
+                    width: 250px;
+                    margin: 16px 0;
+                }
+
+                section header h1 {
+                    font-size: 28px;
+                    color: #0E3E57;
+                    margin: 0;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                section header h2 {
+                    font-size: 22px;
+                    color: #0E3E57;
+                    margin: 0;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    font-style: normal;
+                }
+
+
+        span {
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin: 0;
+        }
+
+        section footer pre a {
+            font-size: 12px;
+            color: blue;
+            text-decoration: underline;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+            section footer pre a:hover {
+                color: darkblue;
+            }
+
+        section footer pre {
+            font-size: 12px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        section main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        section footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    </style>
+
+</head>
+<body>
+
+    <div class="body">
+        <section>
+            <header>
+                <img src="http://api.taak.cl/Public/taak_img_1.png" alt="Taak Logo 1" />
+                <br />
+                <h1>Se ha creado su nueva contraseña.</h1>
+            </header>
+            <hr />
+
+            <main>
+                <h3>Nos complace informarle que su nueva contraseña ha sido creada con éxito</h3>
+                <br>
+                <br />
+                <h1 style="font-weight: bold; text-align: center; font-size: 50px">{{Contrasenia}}</h1>
+                <br />
+                <!--<span>Válido por 10 minutos</span>-->
+                <pre>Inicia sesión en el siguiente enlace<a href={{loginurl}}>haz click en este link</a></pre>
+
+            </main>
+            <hr />
+
+            <footer>
+                <pre>Si piensas que ha sido un error, <a>haz click en este link</a></pre>
+            </footer>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

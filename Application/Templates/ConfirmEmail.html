@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta en proceso</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        .poppins-light {
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .body{
+            padding: 2rem 4rem;
+        }
+
+        hr {
+            border-top: 1px solid #0E3E57;
+            margin: 24px 0;
+        }
+
+        section {
+            background: #FFFFFF;
+            margin: 12px auto;
+            width: clamp(600px, 90vw, 800px);
+            padding: 12px;
+        }
+
+        section header {
+            text-align: center;
+        }
+
+        section header img {
+            width: 250px;
+            margin: 16px 0;
+        }
+
+        section header h1 {
+            font-size: 28px;
+            color: #0E3E57;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        section header h2 {
+            font-size: 22px;
+            color: #0E3E57;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin: 0;
+        }
+
+        section footer pre a {
+            font-size: 14px;
+            color: blue;
+            text-decoration: underline;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+        section footer pre a:hover {
+            color: darkblue;
+        }
+
+        section footer pre {
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        section main {
+            text-align: center;
+        }
+
+        section footer {
+            text-align: center;
+        }
+        
+        .code {
+            text-align: center;
+        }
+        
+        .code h1{
+            display: block;
+            width: fit-content;
+            text-align: center;
+            padding: 32px 120px;
+            margin: 12px auto;
+            border: #0E3E57 1px solid;
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            letter-spacing: 32px;
+            word-spacing: 32px;
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+
+        strong {
+            font-size: 16px;
+            color: #0E3E57;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="body">
+    <section>
+        <header>
+            <img src="http://api.taak.cl/Public/taak_img_1.png" alt="Taak Logo 1"/>
+            <h1>¡Estás a un paso de completar tu registro en Taak!</h1>
+        </header>
+        <hr/>
+
+        <main>
+            <p>Estamos encantados de tenerte con nosotros.</p>
+            <p>Solo necesitamos que realices un último paso para confirmar tu registro.</p>
+            <br>
+            <br>
+            <p>Por favor, introduce el siguiente código de verificación en la plataforma. </p>
+            <p>Nota que este código es válido solo durante los próximos 10 minutos.</p>
+            
+            <div class="code">
+                <h1>{{Token}}</h1>
+            </div>
+
+            <p>Una vez introducido el código, podrás finalizar tu registro y empezar a disfrutar de todas las características que Taak tiene para ofrecerte.</p>
+            
+
+        </main>
+        <hr/>
+
+        <footer>
+            <br/>
+            <pre>Si crees que recibiste este correo electrónico por error o si no solicitaste un cambio de contraseña, por favor, <a>infórmanos de inmediato</a></pre><br/>
+            <p>Gracias por utilizar nuestros servicios.</p><br/>
+            <p><strong>El equipo de taak</strong></p><br/>
+        </footer>
+    </section>
+</div>
+
+</body>
+</html>
